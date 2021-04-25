@@ -1,6 +1,7 @@
 package com.example.mreadyapp.adapters;
 
 import android.content.Context;
+import android.os.Build;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,11 +16,14 @@ import org.json.JSONObject;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -44,6 +48,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedAdapterVie
         return new FeedAdapter.FeedAdapterViewHolder(LayoutInflater.from(context).inflate(R.layout.row_post,parent,false));
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull FeedAdapterViewHolder holder, int position) {
 
@@ -73,15 +78,13 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedAdapterVie
 
         holder.tvMessage.setText(message);
         String aux=date.substring(0,19);
+        LocalDateTime ldt = LocalDateTime.parse(aux);
+        DateTimeFormatter dtfOutput = DateTimeFormatter.ofPattern("HH:mm ,dd MMM yyyy", Locale.ENGLISH);
+        String output = dtfOutput.format(ldt);
+        holder.tvDate.setText(output);
 
-        Date format= null;
-        try {
-            format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm", Locale.ENGLISH).parse(aux);
-            holder.tvDate.setText(format.toString());
 
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+
     }
 
     @Override
