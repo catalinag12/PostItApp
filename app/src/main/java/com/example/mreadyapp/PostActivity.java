@@ -60,7 +60,9 @@ public class PostActivity extends AppCompatActivity {
                         try {
                             if(response.isSuccessful()) {
                                 String s = response.body().string();
-                                Toast.makeText(PostActivity.this, "Succes " + s + token, Toast.LENGTH_LONG).show();
+                                //Toast.makeText(PostActivity.this, "Succes " + s + token, Toast.LENGTH_LONG).show();
+                                Intent intent=new Intent(getApplicationContext(),FeedActivity.class);
+                                startActivity(intent);
                             }
                         } catch (IOException e) {
                             e.printStackTrace();
