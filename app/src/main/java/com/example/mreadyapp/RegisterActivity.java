@@ -62,6 +62,11 @@ public class RegisterActivity extends AppCompatActivity {
         Display_name=edtFullName.getText().toString();
         String repeatPass=edtRepeatPassword.getText().toString();
 
+        if(Display_name.isEmpty()){
+            edtFullName.setError("Complete the full name!");
+            edtFullName.requestFocus();
+            return;
+        }
         if(Username.isEmpty()){
             edtUsername.setError("Complete the username!");
             edtUsername.requestFocus();
@@ -72,11 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
             edtPassword.requestFocus();
             return;
         }
-        if(Display_name.isEmpty()){
-            edtFullName.setError("Complete the full name!");
-            edtFullName.requestFocus();
-            return;
-        }
+
         if(repeatPass.isEmpty() || !repeatPass.equals(Password)){
             edtRepeatPassword.setError("Passwords don't match!");
             edtRepeatPassword.requestFocus();

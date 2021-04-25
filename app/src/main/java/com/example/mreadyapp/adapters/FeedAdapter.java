@@ -1,6 +1,7 @@
 package com.example.mreadyapp.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
@@ -70,16 +72,16 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedAdapterVie
         }
 
         holder.tvMessage.setText(message);
+        String aux=date.substring(0,19);
 
-//            DateFormat format=new SimpleDateFormat("HH:mm , dd MM yyyy ");
-//        try {
-//            Date date1=format.parse(date);
-//            holder.tvDate.setText(String.valueOf(date1));
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-            holder.tvDate.setText(date);
+        Date format= null;
+        try {
+            format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm", Locale.ENGLISH).parse(aux);
+            holder.tvDate.setText(format.toString());
 
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
