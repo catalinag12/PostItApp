@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">mReady app</string>
+    <string name="title_activity_register">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="welcome_register">Enter your details and you are ready to go!</string>
+    <string name="fullname">\u0020 fullname</string>
+    <string name="username">\u0020 thisismyusername</string>
+    <string name="username_reg">\u0020 username</string>
+
+    <string name="password">\u0020 password</string>
+    <string name="repeat">\u0020 repeat password</string>
+    <string name="btn_create">CREATE ACCOUNT</string>
+    <string name="register_bar">Create Account</string>
+    <string name="welcome_login">Welcome Back!\nLogin to your account.</string>
+    <string name="create_account"><u>New here? Create an account. </u></string>
+    <string name="title_activity_feed">FeedActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_post">Add New Post</string>
+    <string name="type_message">Type your message...</string>
+    <string name="feed_title">Feed</string>
+    <string name="add_post">ADD POST</string>
+
+</resources>

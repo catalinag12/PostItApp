@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edt_rounded"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="18dp"
+            android:textSize="14dp"
+            android:id="@+id/tvDisplayName"
+            android:text="Display Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="18dp"
+            android:textSize="14dp"
+            android:id="@+id/tvMessage"
+            android:text="Message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:maxLines="4">
+
+        </TextView>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="216dp"
+            android:textColor="#AEB4CF"
+            android:textSize="14dp"
+            android:id="@+id/tvDate"
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+</LinearLayout>

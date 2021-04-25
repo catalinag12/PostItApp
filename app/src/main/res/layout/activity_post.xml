@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="0"
+        android:textSize="14dp"
+        android:alpha="0.6"
+        android:textColor="@color/white"
+        android:id="@+id/edtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/type_message"
+        android:background="@color/background"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddPost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="SUBMIT"
+        android:backgroundTint="#5969FF"
+        android:textSize="14dp"
+
+         />
+    </LinearLayout>
+</LinearLayout>

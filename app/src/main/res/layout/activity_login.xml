@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/color_edt"
+        />
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/logo_app"/>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_login"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="24dp"
+
+        />
+
+
+    <EditText
+        android:alpha=".6"
+        android:id="@+id/edtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:background="@drawable/edt_rounded"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:width="312dp"
+        android:layout_marginTop="53dp"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+    <EditText
+        android:alpha=".6"
+        android:background="@drawable/edt_rounded"
+
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:minHeight="48dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="6dp"
+        android:backgroundTint="#5969FF"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:height="48dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TextView
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="86dp"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+         />
+</LinearLayout>

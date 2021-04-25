@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="100dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_register"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+
+        android:id="@+id/editTextFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/fullname"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:minHeight="48dp"
+        android:width="312dp"
+        android:layout_marginTop="24dp"
+        android:textColorHint="@color/white"
+        android:alpha=".6"
+        android:background="@drawable/edt_rounded"
+        android:textColor="@color/white"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username_reg"
+        android:alpha=".6"
+        android:background="@drawable/edt_rounded"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:alpha=".6"
+        android:background="@drawable/edt_rounded"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:minHeight="48dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextRepeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/repeat"
+        android:inputType="textPassword"
+        android:alpha=".6"
+        android:background="@drawable/edt_rounded"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:minHeight="48dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="6dp"
+        android:backgroundTint="#5969FF"
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_create"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="578dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:height="48dp"
+        android:width="312dp"
+        android:layout_marginTop="8dp"
+
+        />
+</LinearLayout>
